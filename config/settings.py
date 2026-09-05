@@ -11,7 +11,13 @@ SECRET_KEY = 'django-insecure-change-this-before-you-deploy'
 # True while we are learning. On Day 5 we change this to False.
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://localhost:8000",
+    "http://localhost:8000",
+]
+
 
 
 INSTALLED_APPS = [
